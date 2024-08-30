@@ -25,14 +25,37 @@ modules:
       # - micro
       # - starship
       - kodi
+      - alacritty
+      - celluliod
+      - distrobox
+      - keepassxc
+      - neovim
+      - gwenview
+      - okular
+      - kcalc
+      - HandBrake
+      
+      # ssh packages 
       - openssh
       - openssh-clients
       - openssh-server
+
+      # zsh packages
+      - zsh
+      - autojump-zsh
+      - zsh-autosuggestions
+      - yt-dlp-zsh-completion
+      - zsh-syntax-highlighting
+
+      - tmux
     remove:
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
        - firefox
        - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
+
+       - konsole
+       - konsole-part
 
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
