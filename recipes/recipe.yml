@@ -34,6 +34,7 @@ modules:
       - okular
       - kcalc
       - HandBrake
+      - elisa-player
       
       # ssh packages 
       - openssh
@@ -53,7 +54,6 @@ modules:
       # "firefox" is the main package, "firefox-langpacks" is a dependency
        - firefox
        - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
-
        - konsole
        - konsole-part
 
@@ -70,10 +70,9 @@ modules:
         # - one.ablaze.floorp//lightning # This is an example of flatpak which has multiple branches in selection (flatpak//branch).
         - com.valvesoftware.SteamLink
         - com.spotify.Client
-        - org.videolan.VLC
         - org.mozilla.firefox
         - com.brave.Browser
-        - org.kde.elisa
+
       # Flatpak runtimes are not supported (like org.winehq.Wine//stable-23.08),
       # only normal flatpak applications are (like Floorp Lightning web browser in this example).
       # Installing different branches of the same Flatpak is not supported.
